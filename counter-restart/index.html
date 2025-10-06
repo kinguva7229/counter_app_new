@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <title>counter-app</title>
+  <style>
+    :root, html, body {
+      margin: 0;
+      padding: 0;
+    }
+    #demo {
+      margin: 16px;
+    }
+    counter-restart {
+      margin: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      display: block;
+      padding: 16px;
+    }
+    counter-restart:hover {
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div id="demo">
+    <h1>counter-app</h1>
+    <confetti-container id="confetti"></confetti-container>
+    <counter-restart></counter-restart>
+  </div>
+
+  <script type="module" src="./counter-restart.js"></script>
+</body>
+</html>
+
